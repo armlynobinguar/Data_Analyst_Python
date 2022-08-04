@@ -219,3 +219,10 @@ print(prob_between_10_and_20)
 
 # Set random seed to 334
 np.random.seed(334)
+
+
+# Set random seed to 334
+np.random.seed(334)
+
+# Import uniform
+from scipy.stats import uniform
