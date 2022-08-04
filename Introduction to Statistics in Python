@@ -287,3 +287,8 @@ deals = binom.rvs(3, 0.3, size=52)
 
 # Print mean deals won per week
 print(np.mean(deals))
+
+# Probability of closing 3 out of 3 deals
+prob_3 = binom.pmf(3, 3, 0.3)
+
+print(prob_3)
