@@ -251,3 +251,9 @@ wait_times = uniform.rvs(0, 30, size=1000)
 # Create a histogram of simulated times and show plot
 plt.hist(wait_times)
 plt.show()
+
+# Import binom from scipy.stats
+from scipy.stats import binom
+
+# Set random seed to 10
+np.random.seed(10)
