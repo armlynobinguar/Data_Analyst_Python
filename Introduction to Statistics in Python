@@ -216,3 +216,6 @@ from scipy.stats import uniform
 # Calculate probability of waiting 10-20 mins
 prob_between_10_and_20 = uniform.cdf(20, min_time, max_time) - uniform.cdf(10, min_time, max_time)
 print(prob_between_10_and_20)
+
+# Set random seed to 334
+np.random.seed(334)
