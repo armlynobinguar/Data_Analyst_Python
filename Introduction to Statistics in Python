@@ -257,3 +257,12 @@ from scipy.stats import binom
 
 # Set random seed to 10
 np.random.seed(10)
+
+# Import binom from scipy.stats
+from scipy.stats import binom
+
+# Set random seed to 10
+np.random.seed(10)
+
+# Simulate a single deal
+print(binom.rvs(1, 0.3, size=1))
