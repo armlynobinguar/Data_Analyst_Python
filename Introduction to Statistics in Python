@@ -130,3 +130,7 @@ np.random.seed(24)
 # Sample 5 deals with replacement
 sample_with_replacement = amir_deals.sample(5, replace=True)
 print(sample_with_replacement)
+
+# Create a histogram of restaurant_groups and show plot
+restaurant_groups['group_size'].hist(bins=np.linspace(2,6,5))
+plt.show()
