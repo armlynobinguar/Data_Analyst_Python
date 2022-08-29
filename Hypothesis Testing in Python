@@ -351,3 +351,9 @@ n_total = len(late_shipments)
 
 # Print n_total
 print(n_total)
+
+# Find the number of rows in late_shipments
+n_total = len(late_shipments)
+
+# Print n_total
+print(n_total)
