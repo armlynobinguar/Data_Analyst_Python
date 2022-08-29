@@ -379,3 +379,10 @@ plt.bar(incoterm_counts['vendor_inco_term'], incoterm_counts['n'], color="yellow
 # Add a blue scatter plot for the hypothesized counts
 plt.scatter(hypothesized['vendor_inco_term'], hypothesized['n'], color="blue")
 plt.show()
+
+# Perform a goodness of fit test on vendor_inco_term
+gof_test = chisquare(f_obs=incoterm_counts['n'], 
+                     f_exp=hypothesized['n'])
+
+# Print gof_test results
+print(gof_test)
