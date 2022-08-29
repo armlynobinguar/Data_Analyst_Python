@@ -461,3 +461,6 @@ kw_test = pingouin.kruskal(data=late_shipments,
 
 # Print the results
 print(kw_test)
+
+# Print the late_shipments dataset
+print(late_shipments)
