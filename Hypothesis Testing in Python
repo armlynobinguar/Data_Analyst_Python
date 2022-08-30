@@ -611,3 +611,9 @@ n = len(late_shipments)
 
 # Print p_hat and n
 print(p_hat, n)
+
+# Calculate the pooled estimate of the population proportion
+p_hat = (p_hats["reasonable"] * ns["reasonable"] + p_hats["expensive"] * ns["expensive"]) / (ns["reasonable"] + ns["expensive"])
+
+# Print the result
+print(p_hat)
