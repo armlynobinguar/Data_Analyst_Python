@@ -721,6 +721,16 @@ plt.show()
 # Perform a goodness of fit test on vendor_inco_term
 gof_test = chisquare(f_obs=incoterm_counts['n'], 
                      f_exp=hypothesized['n'])
+                     
+                     
+# Count the freight_cost_group values
+counts = late_shipments['freight_cost_group'].value_counts()
+
+# Print the result
+print(counts)
+
+# Inspect whether the counts are big enough
+print((counts >= 30).all())
 
 # Print gof_test results
 print(gof_test)
