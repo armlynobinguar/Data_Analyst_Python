@@ -657,3 +657,9 @@ stat, p_value = proportions_ztest(count=success_counts, nobs=n,
 
 # Print the results
 print(stat, p_value)
+
+# Proportion of freight_cost_group grouped by vendor_inco_term
+props = late_shipments.groupby('vendor_inco_term')['freight_cost_group'].value_counts(normalize=True)
+
+# Print props
+print(props)
