@@ -734,3 +734,12 @@ print((counts >= 30).all())
 
 # Print gof_test results
 print(gof_test)
+
+# Count the late values
+counts = late_shipments['late'].value_counts()
+
+# Print the result
+print(counts)
+
+# Inspect whether the counts are big enough
+print((counts >= 10).all())
