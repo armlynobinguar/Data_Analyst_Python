@@ -743,3 +743,12 @@ print(counts)
 
 # Inspect whether the counts are big enough
 print((counts >= 10).all())
+
+# Count the late values
+counts = late_shipments['late'].value_counts()
+
+# Print the result
+print(counts)
+
+# Inspect whether the counts are big enough
+print((counts >= 10).all())
